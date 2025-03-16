@@ -1,0 +1,83 @@
+login.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieflix - Login</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+</head>
+
+<body class="bd-dark">
+    <div class="loader"></div> 
+    
+    <nav class="navbar navbar-expand-lg navba-dark fixed-top">
+        <div class="contianer-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img
+                  src="./img/logo-horizontal.png"
+                  alt="Logo"
+                  width="250"
+                  class="logo"
+                  />
+            </a>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <main class="min-vh-100">
+    <!-- banner -->
+        <div class="full-banner opacity-50 min-vh-100"></div>
+
+        <div class="container position-absolute min-vh-100 pos-0">
+            <div class="row min-vh-100 alig-item-center">
+                <form
+                  id="login"
+                  class="col-xl-4 col-lg-6 col-md-8 col-sm-10 p-5 mx-auto">
+                  <h2 class="mb-4 fw-bold text-white">Entrar</h2>
+                  <input
+                    type="text"
+                    class="form-control rounded-1 bg-transparent p-3 mb-3 text-white"
+                    placeholder="Email ou número de telefone" />
+                    
+                  <input type="password" class="form-control rouned-1 bg-transparent p-3 mb-3 text white" />
+
+                  <input type="button" class="btn btn-danger text-white w-100 py-2" placeholder="Senha" onclick="window.location.href='index.html'" />
+                  
+                  <div class="col text-center my-3 mb-5">
+                    <a href="#" class="text-white text-decoration-none mb-5">Esquecer a senha?</a>
+                  </div>
+
+                  <div class="form-check d-flex align-items-end ms-2">
+                    <input
+                      clas="form-check-input bg-transparent fs-4 me-2 rounded-1 border-secondary"
+                      type="checkbox"
+                      value=""
+                      id="rememberMe"
+                      checked />
+
+                      <label class="form-check-label text-white" for="rememberMe">
+                        Lembre-se de mim
+                      </label>
+                  </div>
+                  <div class="col my-3 p-0">
+                    <span class="text-secondary">Novo por aqui?</span>
+                    <a href="#" class="text-white text-decoration-none">Assine agora</a>
+                  </div>
+                  <div class="col p-0">
+                    <p class="text-secondary" style="font-size: 12px">
+                        Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+                    </p>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@S.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
