@@ -25,6 +25,7 @@ body {
 }
 
 .pos-0 {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -33,6 +34,10 @@ body {
 .navbar-nav .nav-item .nav-link {
     color: #E50914;
     font-size: 18px;
+}
+
+.scrolled {
+    background-color: #000000
 }
 
 .loader {
@@ -64,4 +69,10 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }
+
+/* A aba de Filmes em Destaque fica normal em telas menores, mas fica incompleta em telas (por exemplo) 1920x1080.
